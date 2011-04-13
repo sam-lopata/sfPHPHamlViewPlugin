@@ -1,0 +1,51 @@
+== sfPHPHamlViewPlugin ==
+
+This plugin gives you the ability to use the Haml template engine (originally in Ruby)
+with your symfony project. [[BR]] 
+http://haml.hamptoncatlin.com/docs/haml [[BR]]
+Based on http://www.symfony-project.org/plugins/sfHamlViewPlugin. See usage examples there.
+
+== Userful external links ==
+http://www.symfony-project.org/plugins/sfHamlViewPlugin [[BR]]
+https://github.com/joshiausdemwald/sfSmarty3Plugin [[BR]]
+http://trac.symfony-project.org/browser/plugins/sfSmartyPlugin [[BR]]
+https://github.com/henrikbjorn/sfTwigPlugin [[BR]]
+
+== Installation ==
+Checkout plugin to your app plugins folder:
+{{{
+svn co svn://dev.majordomo.ru/sfPHPHamlPlugin/trunk 
+}}}
+Enable plugin in your ProjectConfiguration.class.php:
+{{{
+$this->enablePlugins(array('sfFormExtraPlugin', 'sfPHPHamlViewPlugin'));
+}}}
+
+
+== Usage ==
+To install the plugin, create a file called "module.yml" in your application's config directory and enter
+{{{
+all:
+  view_class: sfPHPHaml
+}}}
+Or you can use  
+{{{
+$this->setViewClass('sfPHPHaml');
+}}}
+in your action. [[BR]]
+
+There are two configuration options which can be set from app.yml (these are the defaults):
+{{{
+all:
+  sfHamlView:
+    template_extension: ".haml"
+    doctype: "XHTML 1.0 Strict"
+}}}
+
+=== Differences ===
+
+
+=== Limitations ===
+
+
+== Example Usage ==
