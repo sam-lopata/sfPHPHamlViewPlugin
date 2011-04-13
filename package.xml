@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfPHPHamlViewPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Haml template engine support for views in symfony &gt;=1.2</summary>
+ <description>Gives a symfony powered project to make use of the Haml template engine.</description>
+ <lead>
+  <name>Semen Bocharov</name>
+  <user>sam_lopata</user>
+  <email>sam.lopata@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-04-01</date>
+ <time>13:23:19</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT License</license>
+ <notes>
+--
+ </notes>
+ <contents>
+  <dir baseinstalldir="sfPHPHamlViewPlugin/" name="/">
+   <dir name="config">
+    <file name="sfPHPHamlViewPluginConfiguration.class.php" role="php" />
+   </dir> <!-- /config -->
+   <dir name="test">
+    <dir name="bin">
+     <file name="prove.php" role="php" />
+    </dir> <!-- /test/bin -->
+    <dir name="bootstrap">
+     <file name="functional.php" role="php" />
+     <file name="unit.php" role="php" />
+    </dir> <!-- /test/bootstrap -->
+    <dir name="fixtures">
+     <dir name="project">
+      <dir name="apps">
+       <dir name="frontend">
+        <dir name="config">
+         <file name="app.yml" role="data" />
+         <file name="cache.yml" role="data" />
+         <file name="factories.yml" role="data" />
+         <file name="filters.yml" role="data" />
+         <file name="frontendConfiguration.class.php" role="php" />
+         <file name="routing.yml" role="data" />
+         <file name="security.yml" role="data" />
+         <file name="settings.yml" role="data" />
+         <file name="view.yml" role="data" />
+        </dir> <!-- /test/fixtures/project/apps/frontend/config -->
+        <dir name="lib">
+         <file name="myUser.class.php" role="php" />
+        </dir> <!-- /test/fixtures/project/apps/frontend/lib -->
+        <dir name="templates">
+         <file name="layout.php" role="php" />
+        </dir> <!-- /test/fixtures/project/apps/frontend/templates -->
+       </dir> <!-- /test/fixtures/project/apps/frontend -->
+      </dir> <!-- /test/fixtures/project/apps -->
+      <dir name="config">
+       <file name="ProjectConfiguration.class.php" role="php" />
+       <file name="properties.ini" role="data" />
+       <file name="rsync_exclude.txt" role="data" />
+      </dir> <!-- /test/fixtures/project/config -->
+      <dir name="data">
+       <dir name="fixtures">
+        <file name="fixtures.yml" role="data" />
+       </dir> <!-- /test/fixtures/project/data/fixtures -->
+      </dir> <!-- /test/fixtures/project/data -->
+      <dir name="lib">
+       <dir name="form">
+        <file name="BaseForm.class.php" role="php" />
+       </dir> <!-- /test/fixtures/project/lib/form -->
+      </dir> <!-- /test/fixtures/project/lib -->
+      <dir name="test">
+       <dir name="bootstrap">
+        <file name="functional.php" role="php" />
+        <file name="unit.php" role="php" />
+       </dir> <!-- /test/fixtures/project/test/bootstrap -->
+      </dir> <!-- /test/fixtures/project/test -->
+      <dir name="web">
+       <dir name="css">
+        <file name="main.css" role="data" />
+       </dir> <!-- /test/fixtures/project/web/css -->
+       <file name="robots.txt" role="data" />
+      </dir> <!-- /test/fixtures/project/web -->
+      <file name="symfony" role="data" />
+     </dir> <!-- /test/fixtures/project -->
+    </dir> <!-- /test/fixtures -->
+   </dir> <!-- /test -->
+   <file name="LICENSE" role="data" />
+   <file name="package.xml.tmpl" role="data" />
+   <file name="README" role="data" />
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.2.0</min>
+    <max>1.4.2</max>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-04-01</date>
+   <license uri="http://www.symfony-project.com/license">MIT License</license>
+   <notes>
+--
+   </notes>
+  </release>
+ </changelog>
+</package>
